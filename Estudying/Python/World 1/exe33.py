@@ -1,7 +1,22 @@
-#i need year
-year = int(input("Enter a Year: "))
+
+#variables numbers
+firstNumber = int(input("Enter a number: "))
+secondNumber = int(input("Enter a Second number: "))
+thirdNumber = int(input(" Enter a Third number: "))
+
+#variables Larger and Smaller
+largerNumber = smallerNumber = firstNumber
+
 #conditions
-if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
-  print("It's a leap Year.")
-else:
-  print("This year is not a leap Year.")
+if secondNumber > firstNumber:
+  largerNumber = secondNumber
+if secondNumber < firstNumber:
+  smallerNumber = secondNumber
+
+if thirdNumber > firstNumber:
+  largerNumber = thirdNumber
+if thirdNumber < firstNumber:
+  smallerNumber = thirdNumber
+
+print(f"Larger Number: {largerNumber}")
+print(f"Smaller Number: {smallerNumber}")
