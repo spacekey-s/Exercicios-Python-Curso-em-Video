@@ -1,6 +1,6 @@
 {
   // Aparência geral
-  "workbench.colorTheme": "Monokai Dimmed+Vibrant",
+  "workbench.colorTheme": "macOS Monokai Classic Dark",
   "workbench.iconTheme": "material-icon-theme",
   "editor.fontFamily": "JetBrains Mono, Consolas, monospace",
   "editor.fontSize": 16,
