@@ -7,7 +7,7 @@ contando = 0
 
 #FUNCTIONS
 def limpar_tela():
-    os.system('cls')
+    os.system('clear')#Windows: cls & Linux: clear
 
 def sair():
     os.system('exit')
@@ -20,10 +20,10 @@ def escolha2():
 
     [ 1 ] Buracos negros
     [ 2 ] Nebulosas
-    [ 3 ] Galaxias 
-    [ 4 ] Estrelas de Neutron  
+    [ 3 ] Galaxias
+    [ 4 ] Estrelas de Neutron
 
-=> ''')     
+=> ''')
         remover = escolha1.strip()
         if remover == '1':
             print('Buraco negro')
@@ -67,8 +67,8 @@ def erro_escolha2():
             escolha2()
         else:
             sleep(1)
-            print('Digite \033[1;32mS\033[m ou \033[1;31mN\033[m !') 
-            sleep(4) 
+            print('Digite \033[1;32mS\033[m ou \033[1;31mN\033[m !')
+            sleep(4)
 
 #primeiro if de resposta == 'Que legal'
 def astro_universo():
@@ -89,7 +89,7 @@ def astro_universo():
             sleep(1)
             #def escolha2()
             escolha2()
-            
+
         elif remover == '2':
             sleep(1)
             print('\nSinto muito, esse script não é pra você !\n')
@@ -173,14 +173,14 @@ while True :
         print("\n\033[1;32mQue legal !\033[m")
         sleep(3)
         astro_universo()
-        
-    
+
+
     elif remover == "2":
         sleep(1)
         print("\nMelhoras !")
         sleep(1)
         tentativa_2()
-        
+
 
     elif contando == 2:
         sleep(1)
@@ -198,6 +198,6 @@ while True :
         limpar_tela()
 
 
-       
+
 
 
