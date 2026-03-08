@@ -1,15 +1,26 @@
-"""Desenvolva um programa que leia o nome, idade e sexo de 4 pessoas. No final do programa, mostre: a média de idade do grupo, qual é o nome do homem mais velho e quantas mulheres têm menos de 20 anos."""
-
-listName = []
-calcAgeUsers = 0
-listSex = []
+#variables and lists
+userOld = ["", 0, ""] #age man
+ageWoman = 0
+calcAgeUsers = 0 #average
 
 #loop
 for data in range(1, 5):
-  nameUser = str(input("Your name: ")).replace(" ", "");listName.append(nameUser)
+  nameUser = str(input("Your name: ")).replace(" ", "").capitalize()
   ageUser = int(input("Your age: "));calcAgeUsers += ageUser
-  sexUser = str(input("Your sex(M/F): ")).replace(" ", "").upper();listSex.append(listSex)
+  sexUser = str(input("Your sex(M/F): ")).replace(" ", "").upper()
+  #conditions age man
+  if ageUser > userOld[1] and sexUser == "M":
+    userOld.clear()
+    userOld.append(nameUser)
+    userOld.append(ageUser)
+    userOld.append(sexUser)
+  elif sexUser == "F" and ageUser < 20:
+    ageWoman += 1
 
-print(listName)
-print(calcAgeUsers)
-print(listSex)
+#calc average
+calcMedia = calcAgeUsers / 4
+
+#show result
+print(f"The average age of the group is {calcMedia} anos.")
+print(f"The oldest man is {userOld[1]} years old, and his name is {userOld[0]}.")
+print(f"In total, there are {ageWoman} women under the of 20.")
