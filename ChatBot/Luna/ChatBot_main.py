@@ -201,7 +201,7 @@ Responda APENAS com o nome escolhido. Uma única palavra."""
 # CONFIGURAÇÕES
 # ============================================
 CONFIG = {
-    "api_key": "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",  # SUA API KEY AQUI
+    "api_key": "",  # SUA API KEY AQUI
 
     # ========== PERFIL (carregado automaticamente ou editável no app) ==========
     "perfil": {
