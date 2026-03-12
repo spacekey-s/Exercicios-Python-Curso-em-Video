@@ -1,2 +1,2 @@
-# Programmer
+# Resolução Exercícios Curso em Vídeo
 
