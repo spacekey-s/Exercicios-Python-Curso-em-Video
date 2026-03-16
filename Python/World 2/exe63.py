@@ -1,5 +1,5 @@
 #F(n)=F(n−1)+F(n−2)
-
+#variavel
 numberInt = int(input("Quantos termos você quer mostrar? "))
 t1 = 0
 t2 = 1
@@ -10,5 +10,7 @@ while contador <= numberInt:
   t3 = t1 + t2
   print(f"-> {t3}",end="")
   contador += 1
+  t1 = t2
+  t2 = t3
 
-print("Fim")
+print(" -> Fim")
