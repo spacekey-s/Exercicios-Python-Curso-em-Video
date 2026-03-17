@@ -7,7 +7,7 @@ while condicao == 0:
   numbers = int(input("Digite um número: "))
   listNumbers.append(numbers)
   question = str(input("Deseja continuar ? [S/N] -> ")).strip().upper()
-  
+
   #condition
   if question == "N":
     media = sum(listNumbers) / len(listNumbers)
