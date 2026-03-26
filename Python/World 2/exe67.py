@@ -1,7 +1,7 @@
-"""Faça um programa que mostre a tabuada de vários números, um de cada vez, para cada valor digitado pelo usuário. O programa será interrompido quando o número solicitado for negativo."""
-
+#laço
 while True:
   number = input("Qual tabuada você quer ver? ").strip().replace(" ", "")
+  #condições
   if "-" in number[0]:
     print("Saindo...")
     break
