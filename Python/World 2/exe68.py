@@ -2,6 +2,8 @@
 import time
 import random
 
+listaGanhos = []
+
 while True:
   numberUser = int(input("Escolha um número inteiro [0/10]: "))
   choiceUser = str(input("Par ou Ímpar? [P/I] = ")).strip().replace(" ", "").upper()
@@ -12,22 +14,22 @@ while True:
 
   print(f"Computador escolheu {numberComp}.")
 
-  if rest == 0:#par
+  if rest == 0 and choiceUser == "P":#par
     print("Par")
-    if choiceUser == "P":
-      print("Você ganhou!")
+    print("Você ganhou!")
+    listaGanhos.append(+1)
 
-  elif rest != 0:#ímpar
+  elif rest != 0 and choiceUser == "I":#ímpar
     print("Ímpar")
-    if choiceUser == "I":
-      print("Você ganhou!")
+    print("Você ganhou!")
+    listaGanhos.append(+1)
 
-  elif rest != 0:
+  elif rest != 0 and choiceUser == "P":
+    print("Ímpar")
+    print("Você perdeu!")
+    break
+
+  elif rest == 0 and choiceUser == "I":
     print("Par")
-    if choiceUser == "P":
-      print("Você perdeu!")
-
-  elif rest == 0:
-    print("Ímpar")
-    if choiceUser == "I":
-      print("Você perdeu!")
+    print("Você perdeu!")
+    break
