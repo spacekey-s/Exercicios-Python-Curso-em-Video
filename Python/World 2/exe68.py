@@ -27,9 +27,11 @@ while True:
   elif rest != 0 and choiceUser == "P":
     print("Ímpar")
     print("Você perdeu!")
+    print(f"Você ganhou {len(listaGanhos)} vezes consecutivas")
     break
 
   elif rest == 0 and choiceUser == "I":
     print("Par")
     print("Você perdeu!")
+    print(f"Você ganhou {len(listaGanhos)} vezes consecutivas")
     break
