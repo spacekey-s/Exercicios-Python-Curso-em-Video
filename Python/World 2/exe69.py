@@ -38,6 +38,7 @@ while True:
   if "N" in condStop:
     print("Finalizando...")
     time.sleep(3)
+    print("-="*25)
     print(f"{len(listMaior)} pessoa(s) com idade superior a 18 anos.")
     print(f"Quantidade de {listUsers.count("M")} pessoa(s), do sexo masculino. ")
     print(f"{len(listMulher)} mulhere(s), com idade inferior a 20 anos.")
