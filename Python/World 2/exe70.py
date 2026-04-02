@@ -10,13 +10,24 @@ import time
 
 listPriceProducts = []
 listProductsExpensive = []
-nameProductCheap = ""
-
+nameAndValue = []
 
 while True:
   print("-="*25)
   nameProduct = str(input("Digite o nome do produto: "))
   priceProduct = float(input("Informe o valor: R$"));listPriceProducts.append(priceProduct)#adicionando valor na lista
+
+  #condiçao para saber quem é o menor
+  productCheap = min(listPriceProducts)
+
+  if priceProduct == productCheap:
+    nameAndValue.clear()
+    nameAndValue.append(nameProduct)
+    nameAndValue.append(productCheap)
+
+  print(productCheap)
+  print(nameProduct)
+  print(nameAndValue)
 
   #condição para a lista de produtos caros // listProductsExpensive
   if priceProduct > 1000:
@@ -30,5 +41,5 @@ while True:
     time.sleep(3)
     print(f"Total da compra: R${sum(listPriceProducts)}.")
     print(f"{len(listProductsExpensive)} produtos com o valor acima de R$1000.")
-    print(f"O nome do produto mas barato é o {nameProductCheap}.")
+    print(f"O nome do produto mas barato é o {nameAndValue[0]}.")
     break
