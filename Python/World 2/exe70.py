@@ -25,10 +25,6 @@ while True:
     nameAndValue.append(nameProduct)
     nameAndValue.append(productCheap)
 
-  print(productCheap)
-  print(nameProduct)
-  print(nameAndValue)
-
   #condição para a lista de produtos caros // listProductsExpensive
   if priceProduct > 1000:
     listProductsExpensive.append(priceProduct)
