@@ -27,7 +27,7 @@ if valor >= 10:#notas de 10
 #NOTAS 5
 if valor >= 5:
   notas_5 = valor // 5
-  print(f"{notas_5} notas de R$5.")
+  print(f"{notas_5} nota(s) de R$5.")
   valor = valor % 5
 
 #NOTAS 1
